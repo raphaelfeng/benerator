@@ -9,6 +9,7 @@ import org.databene.model.data.DataModel;
 import org.databene.model.data.Entity;
 import org.databene.platform.csv.CSVEntityExporter;
 import org.databene.platform.db.DBSystem;
+import org.databene.platform.db.DefaultDBSystem;
 import org.databene.webdecs.DataContainer;
 import org.databene.webdecs.DataIterator;
 import org.databene.webdecs.DataSource;
@@ -26,7 +27,7 @@ public class CSVTableExporterDemo {
     
     public static void main(String[] args) throws IOException {
     	// first we create a table with some data to export
-        DBSystem db = new DBSystem(null, JDBC_URL, JDBC_DRIVER, USER, PASSWORD, new DataModel());
+        DBSystem db = new DefaultDBSystem(null, JDBC_URL, JDBC_DRIVER, USER, PASSWORD, new DataModel());
         try {
 	        db.execute("create table db_data (" + 
 	        			"    id   int," +

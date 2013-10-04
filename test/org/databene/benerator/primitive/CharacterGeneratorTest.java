@@ -70,13 +70,13 @@ public class CharacterGeneratorTest extends GeneratorClassTest {
         for (char c = '0'; c <= '9'; c++)
             expectedSet.add(c);
         expectedSet.add('_');
-        expectedSet.add('ä');
-        expectedSet.add('ö');
-        expectedSet.add('ü');
-        expectedSet.add('Ä');
-        expectedSet.add('Ö');
-        expectedSet.add('Ü');
-        expectedSet.add('ß');
+//        expectedSet.add('��');
+//        expectedSet.add('��');
+//        expectedSet.add('��');
+//        expectedSet.add('��');
+//        expectedSet.add('��');
+//        expectedSet.add('��');
+//        expectedSet.add('��');
 
         checkProductSet(create("\\w", Locale.GERMAN), 10000, expectedSet);
     }

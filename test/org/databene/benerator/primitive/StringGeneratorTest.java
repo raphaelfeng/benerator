@@ -287,7 +287,7 @@ public class StringGeneratorTest extends GeneratorTest {
 	}
 	
 	public class UmlautValidator implements Validator<String> {
-		private Set<Character> allowedValues = CollectionUtil.toSet('Ä', 'ä', 'Ö', 'ö', 'Ü', 'ü', 'ß');
+		private Set<Character> allowedValues = CollectionUtil.toSet('a');
 		@Override
 		public boolean valid(String value) {
 			for (int i = 0; i < value.length(); i++)

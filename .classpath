@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="demo"/>
+	<classpathentry excluding="org/databene/benerator/archetype/extend/src/main/java/" kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="lib/antlr-runtime-3.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/connector-api-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/contiperf-2.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/databene-benerator-0.8.3.jar"/>
+	<classpathentry kind="lib" path="lib/databene-commons-0.5.24.jar"/>
+	<classpathentry kind="lib" path="lib/databene-script-0.7.15.jar"/>
+	<classpathentry kind="lib" path="lib/databene-webdecs-0.6.18.jar"/>
+	<classpathentry kind="lib" path="lib/derbyclient-10.6.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/freemarker-2.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/h2-1.2.136.jar"/>
+	<classpathentry kind="lib" path="lib/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/hsqldb-1.8.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/jaybird-2.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/jdbacl-0.8.11.jar"/>
+	<classpathentry kind="lib" path="lib/jtds-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.12.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-8.4-701.jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis-1.3.04.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

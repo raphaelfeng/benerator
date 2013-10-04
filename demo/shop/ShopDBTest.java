@@ -26,7 +26,11 @@
 
 package shop;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.io.IOException;
+import java.util.Map;
 
 import org.databene.benerator.engine.DefaultBeneratorContext;
 import org.databene.benerator.main.Benerator;
@@ -35,14 +39,12 @@ import org.databene.commons.IOUtil;
 import org.databene.commons.Validator;
 import org.databene.model.data.Entity;
 import org.databene.platform.db.DBSystem;
+import org.databene.platform.db.DefaultDBSystem;
 import org.databene.webdecs.DataContainer;
 import org.databene.webdecs.DataIterator;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
-import java.util.Map;
 
 /**
  * Tests the shop demo on all supported database systems.<br/>
@@ -107,7 +109,7 @@ public class ShopDBTest {
         // connect to database
         Map<String, String> dbCfg = IOUtil.readProperties("demo/shop/" + database + "/shop." + database + ".properties");
         DefaultBeneratorContext context = new DefaultBeneratorContext();
-        DBSystem db = new DBSystem("db", dbCfg.get("dbUri"), dbCfg.get("dbDriver"), dbCfg.get("dbUser"), dbCfg.get("dbPassword"), context.getDataModel());
+        DBSystem db = new DefaultDBSystem("db", dbCfg.get("dbUri"), dbCfg.get("dbDriver"), dbCfg.get("dbUser"), dbCfg.get("dbPassword"), context.getDataModel());
         // check generation results
 		Map<String, Object> genCfg = IOUtil.readProperties("demo/shop/shop." + stage + ".properties", 
         		new DefaultEntryConverter(context));
